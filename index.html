@@ -1,16 +1,67 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the-evens</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Steven He</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+        <style>
+        body {
+            margin: 0;
+            font-family: "Inter";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .wrapper {
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .column-20 {
+            flex: 0 0 20%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .column-80 {
+            flex: 0 0 80%;
+            background-color: #e2e2e2;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .column-20, .column-80 {
+                flex: 0 0 100%;
+            }
+        }
+        </style>
+    </head>
 <body>
-    <h1>the-evens</h1>
-    <p>hello my name is steven he and i am a student at neuqua valley high school</p>
-    <i class="fa fa-rocket"></i><a href="projects.html">projects</a>
-    <i class="fa fa-github"></i><a href="https://github.com/the-evens">github</a>
-    <i class="fa fa-file"></i><a href="resume.pdf">resume</a>
+    <div class="wrapper">
+        <div class="container">
+            <div class="column-20">
+                <h2>Steven He</h2>
+            </div>
+            <div class="column-80">
+                <p>I'm a rising Junior at Neuqua Valley High School</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
