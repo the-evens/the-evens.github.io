@@ -1,0 +1,114 @@
+:root {
+    --bg-color: #f7f7f7;
+    --primary-color: #ffffff;
+    --text-color: #333;
+    --accent-color: #007bff;
+    --secondary-text-color: #666;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --font-family-serif: 'Lora', serif;
+    --font-family-sans-serif: 'Lato', sans-serif;
+}
+
+body {
+    font-family: var(--font-family-sans-serif);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.content-container {
+    width: 90%;
+    max-width: 600px;
+    text-align: left;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    padding: 30px 40px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+    animation: fadeIn 0.8s ease-out;
+    border: 1px solid #eee;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+header h1 {
+    font-family: var(--font-family-serif);
+    font-size: clamp(28px, 5vw, 40px);
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: var(--text-color);
+}
+
+header .subtitle {
+    font-family: var(--font-family-sans-serif);
+    font-size: clamp(16px, 4vw, 18px);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 2em;
+}
+
+.projects h2 {
+    font-family: var(--font-family-serif);
+    font-size: clamp(20px, 4vw, 24px);
+    font-weight: 600;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5em;
+    color: var(--text-color);
+}
+
+.link {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.project-item {
+    margin-bottom: 1.5em;
+}
+
+.project-item .link {
+    font-size: clamp(16px, 4vw, 18px);
+}
+
+.project-item p {
+    font-size: clamp(14px, 4vw, 16px);
+    color: var(--secondary-text-color);
+    margin: 0.3em 0 0 0;
+    line-height: 1.5;
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.social-icon {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+    font-size: 28px;
+}
+
+.social-icon:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+} 
