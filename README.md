@@ -1,3 +1,3 @@
 # the-evens.github.io
 
-Thanks for checking out my website.
+thanks for checking out my website.
