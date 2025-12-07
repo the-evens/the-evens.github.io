@@ -14,22 +14,23 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .content-container {
-    width: 90%;
-    max-width: 600px;
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
     text-align: left;
     background-color: var(--primary-color);
     border-radius: 15px;
-    padding: 30px 40px;
+    padding: 20px 25px;
     box-shadow: 0 10px 30px var(--shadow-color);
     animation: fadeIn 0.8s ease-out;
     border: 1px solid #eee;
@@ -42,27 +43,27 @@ body {
 
 header h1 {
     font-family: var(--font-family-serif);
-    font-size: clamp(28px, 5vw, 40px);
+    font-size: clamp(24px, 4vw, 32px);
     font-weight: 700;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
     color: var(--text-color);
 }
 
 header .subtitle {
     font-family: var(--font-family-sans-serif);
-    font-size: clamp(16px, 4vw, 18px);
+    font-size: clamp(14px, 3vw, 16px);
     color: var(--text-color);
-    line-height: 1.6;
-    margin-bottom: 1.5em;
+    line-height: 1.4;
+    margin-bottom: 1em;
 }
 
 .projects h2 {
     font-family: var(--font-family-serif);
-    font-size: clamp(20px, 4vw, 24px);
+    font-size: clamp(18px, 3vw, 20px);
     font-weight: 600;
-    margin-bottom: 1em;
+    margin-bottom: 0.7em;
     border-bottom: 1px solid #eee;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.3em;
     color: var(--text-color);
 }
 
@@ -79,22 +80,22 @@ header .subtitle {
 }
 
 .project-item {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 .project-item .link {
-    font-size: clamp(16px, 4vw, 18px);
+    font-size: clamp(14px, 3vw, 16px);
 }
 
 .project-item p {
-    font-size: clamp(14px, 4vw, 16px);
+    font-size: clamp(12px, 3vw, 14px);
     color: var(--secondary-text-color);
-    margin: 0.3em 0 0 0;
-    line-height: 1.5;
+    margin: 0.2em 0 0 0;
+    line-height: 1.4;
 }
 
 .social-links {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     gap: 16px;
     align-items: center;
@@ -105,7 +106,7 @@ header .subtitle {
     text-decoration: none;
     transition: color 0.2s ease, transform 0.2s ease;
     display: inline-block;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .social-icon:hover {
